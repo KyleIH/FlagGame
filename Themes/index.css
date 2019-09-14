@@ -1,0 +1,12 @@
+img.modeImg{
+    width: 25vw;
+    padding: 1vw;
+    margin: 1vw;
+    border-color: #000000;
+    border-style: solid;
+    border-radius: 1.5vw;
+}
+
+a{
+    text-decoration: none;
+}

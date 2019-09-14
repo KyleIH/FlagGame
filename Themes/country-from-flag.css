@@ -1,0 +1,45 @@
+h1 {
+    margin: 0.75vw 4.5vw 0.75vw 0;
+    display: inline-block;
+}
+
+#flagWrapper{
+    margin: 10px auto;
+    width: 60%;
+    padding-bottom: 40%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+#flagImage{
+    border-style: solid;
+    border-color: #111111;
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -3;
+    right: 0;
+    margin: auto;
+}
+
+button.guessBtn, button.resetBtn{
+    background-color: #EDEDED;
+    margin: 0.5vw;
+    padding: 1vw 3vw;
+    text-decoration: none;
+    font-size: calc(16px + 0.5vw);
+    border-width: 1px;
+    border-style: solid;
+    border-color: #BBBBBB;
+    transition-duration: 0.25s;
+}
+
+button:hover:enabled{
+    background-color: #FDFDFD;
+}
+
+button.resetBtn{
+    margin: 1.5vw;
+}

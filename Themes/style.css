@@ -1,0 +1,45 @@
+* {
+    text-align: center;
+}
+
+html {
+    background-color: #cccccc;
+}
+
+body {
+    background-color: #ffffff;
+    width: 70%;
+    margin: 15px auto 15px auto;
+    border-color: #000000;
+    border-style: solid;
+    border-radius: 3vw;
+}
+
+h1 {
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: calc(16px + 1.25vw);
+    margin: 0.75vw 0;
+}
+
+h2 {
+    font-family: "Arial", Gadget, sans-serif;
+    font-size: calc(12px + 1vw);
+}
+
+button#backBtn {
+    float: left;
+    width: 0;
+    height: 0;
+    border-top: 2vw solid transparent;
+    border-right: 4vw solid #EDEDED;
+    border-bottom: 2vw solid transparent;
+    border-left: 0;
+    background-color: transparent;
+    margin: 0.5vw;
+    transition-duration: 0.25s;
+    padding: 0;
+}
+
+button#backBtn:hover {
+    border-right-color: #b3e0ff;
+}
