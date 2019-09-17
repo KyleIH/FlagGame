@@ -1,10 +1,10 @@
 h1 {
-    margin: 0.75vw 4.5vw 0.75vw 0;
+    margin: 1vw 4.5vw 1vw 0;
     display: inline-block;
 }
 
 #flagWrapper{
-    margin: 10px auto;
+    margin: 20px auto;
     width: 60%;
     padding-bottom: 40%;
     box-sizing: border-box;
@@ -19,7 +19,7 @@ h1 {
     position: absolute;
     top: 0;
     bottom: 0;
-    left: -3;
+    left: 0;
     right: 0;
     margin: auto;
 }

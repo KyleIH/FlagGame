@@ -22,4 +22,10 @@ function newRound(){
             'background-color': '',
             'color': ''})
         .attr('disabled', false);
+
+    //Reset round failure tracker
+    roundAlreadyFailed = false;
+
+    //Disable reset button
+    $resetBtn.attr('disabled', true);
 }

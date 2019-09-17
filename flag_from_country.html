@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
         <Title>Flag Game - Guess Flag From Country</Title>
         <link href="Themes/style.css" type="text/css" rel="stylesheet"/>
@@ -6,7 +7,7 @@
     </head>
     <body>
         <a href="index.html">
-            <button id="backBtn"></button>
+            <div id="backBtn"></div>
         </a>
 
         <h1>Guess Flag From Country</h1>
@@ -14,34 +15,43 @@
         <h2 id="countryName">[COUNTRY NAME]</h2>
 
         <button id="guessBtn0" class="guessBtn">
-            <img src="" id="guessFlag0" class="guessFlag" alt="Guess Flag 0"/>
+            <img src="https://via.placeholder.com/300" id="guessFlag0" class="guessFlag" alt="Guess Flag 0"/>
         </button>
         <button id="guessBtn1" class="guessBtn">
-            <img src="" id="guessFlag1" class="guessFlag" alt="Guess Flag 1"/>
+            <img src="https://via.placeholder.com/300" id="guessFlag1" class="guessFlag" alt="Guess Flag 1"/>
         </button>
         <button id="guessBtn2" class="guessBtn">
-            <img src="" id="guessFlag2" class="guessFlag" alt="Guess Flag 2"/>
+            <img src="https://via.placeholder.com/300" id="guessFlag2" class="guessFlag" alt="Guess Flag 2"/>
         </button>
 
         <br/>
 
         <button id="guessBtn3" class="guessBtn">
-            <img src="" id="guessFlag3" class="guessFlag" alt="Guess Flag 3"/>
+            <img src="https://via.placeholder.com/300" id="guessFlag3" class="guessFlag" alt="Guess Flag 3"/>
         </button>
         <button id="guessBtn4" class="guessBtn">
-            <img src="" id="guessFlag4" class="guessFlag" alt="Guess Flag 4"/>
+            <img src="https://via.placeholder.com/300" id="guessFlag4" class="guessFlag" alt="Guess Flag 4"/>
         </button>
         <button id="guessBtn5" class="guessBtn">
-            <img src="" id="guessFlag5" class="guessFlag" alt="Guess Flag 5"/>
+            <img src="https://via.placeholder.com/300" id="guessFlag5" class="guessFlag" alt="Guess Flag 5"/>
         </button>
 
         <br/> <br/>
 
         <button id="resetBtn" class="resetBtn"> New Round </button>
 
+        <br />
+
+        <div id="scoringWrapper">
+            <h2 class="scoringLabel">Current Streak:</h2>
+            <h2 class="score" id="scoreStreak">0</h2>
+            <h2 class="scoringLabel">Percentage Correct:</h2>
+            <h2 class="score" id="scorePercent">0%</h2>
+        </div>
+        
         <!-- Scripts -->
         <script src="Scripts/jquery-3.4.1.min.js"></script>
-        <script src="Scripts/mode-common.js"></script>
         <script src="Scripts/flag-from-country.js"></script>
+        <script src="Scripts/mode-common.js"></script>
     </body>
 </html>

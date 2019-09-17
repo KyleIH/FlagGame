@@ -13,10 +13,16 @@ $.getJSON("countries.json", function(data){
 //Cache jquery selections
 var $guessBtns = $('button.guessBtn');
 var $resetBtn = $('button#resetBtn');
+var $scoreStreak = $('h2#scoreStreak');
+var $scorePercent = $('h2#scorePercent');
 
 //Global vars
 var correctId;
 var correctBtn;
+var currStreak = 0;
+var numAttempts = 0;
+var numCorrect = 0;
+var roundAlreadyFailed = false;
 
 //Processes a guess event from a button click
 function processGuess(event){
@@ -26,11 +32,30 @@ function processGuess(event){
             .css({
                 'background-color': '#BFFFBF',
                 'color': 'buttontext'});
+
+        //Update scores if haven't already
+        if (!roundAlreadyFailed) {
+            numAttempts++;
+            numCorrect++;
+            currStreak++;
+            updateScoreLabels();
+        }
+
+        //Enable new round button
+        $resetBtn.attr('disabled', false);
     }
     else {
         $guessBtns.eq(event.data.btnIndex)
         .css('background-color', '#FFBFBF')
         .attr('disabled', true);
+
+        //Update scores if haven't already
+        if (!roundAlreadyFailed) {
+            numAttempts++;
+            currStreak = 0;
+            roundAlreadyFailed = true;
+            updateScoreLabels();
+        }
     }
 }
 
@@ -51,4 +76,10 @@ function genRandomIds(){
         idsSet.add(Math.floor(Math.random()*countries.length));
 
     return Array.from(idsSet);
+}
+
+//Updates the text in the score labels
+function updateScoreLabels(){
+    $scoreStreak.text(currStreak);
+    $scorePercent.text(Math.round(numCorrect * 100.0 / numAttempts) + "%");
 }

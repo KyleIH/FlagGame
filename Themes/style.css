@@ -26,7 +26,7 @@ h2 {
     font-size: calc(12px + 1vw);
 }
 
-button#backBtn {
+#backBtn {
     float: left;
     width: 0;
     height: 0;
@@ -40,6 +40,23 @@ button#backBtn {
     padding: 0;
 }
 
-button#backBtn:hover {
+#backBtn:hover {
     border-right-color: #b3e0ff;
+}
+
+h2.scoringLabel {
+    display: inline-block;
+    margin: 0 1vw;
+}
+
+h2.score {
+    display: inline-block;
+}
+
+h2#scorestreak {
+    margin-right: 5vw;
+}
+
+h2#scorePercent {
+    margin-right: 1vw;
 }
