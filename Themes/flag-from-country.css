@@ -3,19 +3,24 @@ h1 {
     display: inline-block;
 }
 
-#flagWrapper{
-    margin: 10px auto;
-    width: 60%;
-    padding-bottom: 40%;
+button.guessBtn{
+    margin: 1vw;
+    width: 18vw;
+    padding-bottom: 12vw;
     box-sizing: border-box;
     position: relative;
+    background-color: #EDEDED;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #BBBBBB;
+    transition-duration: 0.25s;
 }
 
-#flagImage{
+img.guessFlag {
     border-style: solid;
     border-color: #111111;
-    max-height: 100%;
-    max-width: 100%;
+    max-height: 90%;
+    max-width: 90%;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -24,9 +29,9 @@ h1 {
     margin: auto;
 }
 
-button.guessBtn, button.resetBtn{
+button.resetBtn{
     background-color: #EDEDED;
-    margin: 0.5vw;
+    margin: 1.5vw;
     padding: 1vw 3vw;
     text-decoration: none;
     font-size: calc(16px + 0.5vw);
@@ -36,10 +41,6 @@ button.guessBtn, button.resetBtn{
     transition-duration: 0.25s;
 }
 
-button.guessBtn:hover:enabled, button.resetBtn:hover:enabled{
+button.resetBtn:hover:enabled, button.guessBtn:hover:enabled{
     background-color: #FDFDFD;
-}
-
-button.resetBtn{
-    margin: 1.5vw;
 }
