@@ -28,6 +28,16 @@ h2 {
     font-size: calc(12px + 1vw);
 }
 
+p {
+    font-family: "Arial", Gadget, sans-serif;
+    font-size: calc(12px + .1vw);
+}
+
+p a {
+    text-decoration: underline;
+    color: black;
+}
+
 #backBtn {
     float: left;
     width: 0;
